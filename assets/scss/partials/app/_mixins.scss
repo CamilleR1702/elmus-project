@@ -1,0 +1,39 @@
+// ---------------------------------------------------------
+// Mixins
+// ---------------------------------------------------------
+
+@mixin font-size($size) {
+    font-size: #{$size}px; //Fallback in px
+    font-size: calculate-rem($size);
+ }
+ 
+ @mixin hover {
+    &:hover, &:focus {
+       @content;
+    }
+ }
+ 
+ @mixin group {
+    &:after {
+       content: '';
+       display: table;
+       clear: both;
+    }
+ }
+
+ @mixin transition{
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -ms-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+ }
+ 
+ @mixin sticky{
+   position: sticky;
+   top: 0;
+ }
+
+@mixin circle{
+  border-radius: 100%;
+}

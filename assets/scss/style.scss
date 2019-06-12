@@ -1,0 +1,27 @@
+ /*
+ Theme Name:   Decayeux
+ Theme URI:
+ Description:  Decayeux
+ Author:       Atalanta
+ Author URI:   http://www.atalanta.fr/
+ Template:
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, responsive-layout, accessibility-ready, atalanta
+ Text Domain:  atalanta
+*/
+
+/* Atalanta bootstrap CSS */
+@import "partials/bootstrap/bootstrap";
+
+/* Atalanta reset CSS */
+@import "partials/app/variables";
+@import "partials/app/functions";
+@import "partials/app/mixins";
+@import "partials/app/reset";
+
+/* Atalanta plugins CSS */
+// @import "partials/plugins/formidable-forms";
+
+/* Atalanta theme CSS */

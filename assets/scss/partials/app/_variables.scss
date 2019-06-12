@@ -1,0 +1,54 @@
+// ---------------------------------------------------------
+// Variables
+// 1 - Fonts
+// 2 - Colors
+// ---------------------------------------------------------
+
+// FONTS
+
+@font-face {
+    font-family: 'NeoSansStdBold';
+    src: url('./assets/fonts/NeoSansStdBold.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeoSansStdRegular';
+    src: url('./assets/fonts/NeoSansStdRegular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$html-font-size: 16 !default; // px
+$body-font-size: 14 !default; // px
+@media screen and (min-width: 1365px){
+    $body-font-size: 16 !default; // px
+}
+
+$body-font-family: 'NeoSansStdRegular', sans-serif;
+$fontRegular :'NeoSansStdRegular', sans-serif;
+$fontBold: 'NeoSansStdBold', sans-serif;
+
+// ------------------------------------
+// Colors
+// ------------------------------------
+
+$default:      	       #151010, !default; // grisf
+$yellowLight:          #FFFF81, !default;
+$greenLight:           #55ffe7, !default;
+
+$border-radius: 2px;
+
+// COLUMNS
+
+$global-width: 1170px !default;
+$gutter-width: 1.5em !default;
+
+// BREAKPOINT 
+
+$screen-xxl: 1580px !default;
+$screen-xl: 1200px !default;
+$screen-lg: 1024px !default;
+$screen-sm: 768px !default;
+$screen-xs: 576px !default;
