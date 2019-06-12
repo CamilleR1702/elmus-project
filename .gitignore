@@ -1,0 +1,67 @@
+# ignore all files starting with . or ~
+.*
+~*
+
+# ignore wp config
+wp-config.php
+package-lock.json
+
+# ignore directories
+.sass-cache/
+node_modules/
+
+
+# ignore compiled css
+// style.css
+// style.min.css
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+
+# ignore log files and databases
+*.log
+# *.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+#*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# -------------------------
+# BEGIN Whitelisted Files
+# -------------------------
+# track these files, if they exist
+!.gitignore
+!.editorconfig
+!README.md
+!CHANGELOG.md
+!composer.json
+
+# -------------------------
+# PHP IDEA
+# -------------------------
+.idea/cour-des-arts.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
