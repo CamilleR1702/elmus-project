@@ -1,5 +1,10 @@
-@import "partials/bootstrap/bootstrap";
+/* RESETS */
+
 @import "partials/app/variables";
 @import "partials/app/functions";
 @import "partials/app/mixins";
 @import "partials/app/reset";
+@import "partials/app/sizes";
+
+/* PROJECT */
+@import "partials/backgrounds";
