@@ -7,15 +7,9 @@
 // FONTS
 
 @font-face {
-    font-family: 'NeoSansStdBold';
-    src: url('./assets/fonts/NeoSansStdBold.woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NeoSansStdRegular';
-    src: url('./assets/fonts/NeoSansStdRegular.woff');
+    font-family: 'Furore';
+    src: url('./assets/fonts/furore.woff2') format('woff2'),
+    url('./assets/fonts/furore.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -26,7 +20,8 @@ $body-font-size: 14 !default; // px
     $body-font-size: 16 !default; // px
 }
 
- $body-font-family: Arial, sans-serif;
+$body-font-family: Arial, sans-serif;
+$font-title: 'Furore', sans-serif;
 // $fontRegular :'NeoSansStdRegular', sans-serif;
 // $fontBold: 'NeoSansStdBold', sans-serif;
 
