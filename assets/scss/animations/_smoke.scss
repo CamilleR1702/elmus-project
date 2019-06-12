@@ -1,14 +1,19 @@
 .figure-smoke{
-  bottom: 10px;
   width: calc(5963px / 21);
   height: 90px;
   background: url("./assets/img/decollage.png");
- -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-animation: animate 1s steps(21) infinite;
-  -o-animation: animate 1s steps(21) infinite;
-  animation: animate 1s steps(21) infinite;
+  -webkit-animation: animate 1.2s steps(6) infinite;
+  -o-animation: animate 1.2s steps(6) infinite;
+  animation: animate 1.2s steps(6) infinite;
+  margin: 0 auto;
+}
+
+
+@keyframes animate {
+  from{
+    background-position: 0;
+  }
+  to{
+    background-position: 100%;
+  }
 }
