@@ -1,5 +1,12 @@
-@import "partials/bootstrap/bootstrap";
+// @import "partials/bootstrap/bootstrap";
 @import "partials/app/variables";
 @import "partials/app/functions";
 @import "partials/app/mixins";
-@import "partials/app/reset";
+@import "partials/app/fonts";
+// @import "partials/app/reset";
+
+@import "../fontawesome/scss/fontawesome.scss";
+@import "../fontawesome/scss/regular.scss";
+@import "../fontawesome/scss/brands.scss";
+@import "../fontawesome/scss/solid.scss";
+@import "partials/app/earth";

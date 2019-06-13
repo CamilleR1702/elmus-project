@@ -4,21 +4,7 @@
 // 2 - Colors
 // ---------------------------------------------------------
 
-// FONTS
-
-@font-face {
-    font-family: 'NeoSansStdBold';
-    src: url('./assets/fonts/NeoSansStdBold.woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NeoSansStdRegular';
-    src: url('./assets/fonts/NeoSansStdRegular.woff');
-    font-weight: normal;
-    font-style: normal;
-}
+$fa-font-path: "assets/fontawesome/webfonts" !default;
 
 $html-font-size: 16 !default; // px
 $body-font-size: 14 !default; // px
@@ -26,9 +12,9 @@ $body-font-size: 14 !default; // px
     $body-font-size: 16 !default; // px
 }
 
-$body-font-family: 'NeoSansStdRegular', sans-serif;
-$fontRegular :'NeoSansStdRegular', sans-serif;
-$fontBold: 'NeoSansStdBold', sans-serif;
+$body-font-family: 'BarlowCondensed-Regular', sans-serif;
+$font-family-1 :'Furore', sans-serif;
+$font-family-2 :'BarlowCondensed-Bold', sans-serif;
 
 // ------------------------------------
 // Colors
@@ -38,6 +24,12 @@ $default:      	       #151010, !default; // grisf
 $yellowLight:          #FFFF81, !default;
 $greenLight:           #55ffe7, !default;
 
+$color-1: #50464C;
+
+//Ecran cockpit
+$color-2: #1FEFEB;
+$color-3: #08D2FA;
+
 $border-radius: 2px;
 
 // COLUMNS
@@ -45,7 +37,7 @@ $border-radius: 2px;
 $global-width: 1170px !default;
 $gutter-width: 1.5em !default;
 
-// BREAKPOINT 
+// BREAKPOINT
 
 $screen-xxl: 1580px !default;
 $screen-xl: 1200px !default;
