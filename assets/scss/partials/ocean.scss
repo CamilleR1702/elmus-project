@@ -1,0 +1,57 @@
+body{
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  position: relative;
+}
+
+.block-main-ocean-coast{
+  background-image: url(assets/img/bg-cote-ocean.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.block-main-ocean{
+  background-image: url(assets/img/bg-ocean.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  // position: absolute;
+  // width: 4880px;
+  // height: 1080px;
+  // max-height: 1080px;
+  // left: 0;
+  // bottom: 0;
+}
+
+.first-ground.ocean{
+  background-image: url(assets/img/ocean-black.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  // position: absolute;
+  // width: 4880px;
+  // height: 1080px;
+  // max-height: 1080px;
+  // z-index: 2;
+  // left: 0;
+  // bottom: 0;
+}
+
+#ocean.active{
+  animation: ocean 15s linear forwards;
+}
+
+#oceanBlack.active {
+  animation: ocean 20s linear forwards;
+}
+
+@keyframes ocean {
+  0% {
+    // transform: translateX(0);
+    background-position: 0;
+  }
+  100% {
+    // transform: translateX(-4880px);
+    background-position: -4880px;
+  }
+}

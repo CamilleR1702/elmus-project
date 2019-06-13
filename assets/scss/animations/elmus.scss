@@ -1,0 +1,82 @@
+// ELMUS FACE
+.elmus-face{
+  background-image: url('assets/img/elmus-face.svg');
+  background-repeat: no-repeat;
+  height: 205px;
+  width: 100px;
+  background-size: cover;
+  position: absolute;
+  bottom: 270px;
+  left: 400px;
+}
+#elmus.active {
+  animation: eyes .5s steps(5) infinite alternate;
+}
+
+@keyframes eyes {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -500px;
+  }
+}
+
+// MINI EYE
+.min-eye {
+  background: url('assets/img/min-eye.svg') no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 18px;
+  right: 0;
+}
+#eye.active {
+  animation: eye .5s steps(5) infinite alternate;
+}
+
+@keyframes eye {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -100px;
+  }
+}
+
+// SWIM
+.elmus-swim{
+  background-image: url('assets/img/elmus-sprite-swim.svg');
+  background-repeat: no-repeat;
+  height: 225px;
+  width: 167px;
+  background-size: cover;
+  position: absolute;
+  bottom: 270px;
+  left: 400px;
+}
+#elmusSwim.active {
+  animation: elmusStartSwim 1s steps(7) forwards;
+}
+#elmusSwim.active-swim{
+  animation: elmusSwim .8s steps(4) infinite;
+}
+
+@keyframes elmusStartSwim {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -1170px;
+  }
+}
+
+@keyframes elmusSwim {
+  0% {
+    background-position: -1170px;
+  }
+  100% {
+    background-position: -1835px;
+  }
+}
