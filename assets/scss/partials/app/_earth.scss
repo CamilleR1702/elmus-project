@@ -1,7 +1,7 @@
 body {
   margin: 0;
   overflow: hidden;
-  background: url(images/fond-galactique.svg);
+  background: url(images/cockpit/fond-galactique.svg);
   background-size: cover;
   font-family: $body-font-family;
   color: $color-3;
@@ -65,10 +65,10 @@ p {
   /*orginal image at https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Earthmap1000x500compac.jpg/640px-Earthmap1000x500compac.jpg */
   background-size: cover;
   .block-earth-1 & {
-    background: url(images/phase-1.svg);
+    background: url(images/cockpit/phase-1.svg);
   }
   .block-earth-2 & {
-    background: url(images/phase-2.svg);
+    background: url(images/cockpit/phase-2.svg);
   }
 }
 @keyframes spin {
@@ -89,7 +89,7 @@ p {
   box-shadow: 0 0 10px 10px rgba($color-2, 0);
   > div {
     .block-earth & {
-      background: url(images/cadran-terre.svg);
+      background: url(images/cockpit/cadran-terre.svg);
     }
 
   }
