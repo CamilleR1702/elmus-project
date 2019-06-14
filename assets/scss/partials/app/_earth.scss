@@ -1,7 +1,7 @@
 body {
   margin: 0;
   overflow: hidden;
-  background: url(images/fond-galactique.svg);
+  background: url(./assets/img/fond-galactique.svg);
   background-size: cover;
   font-family: $body-font-family;
   color: $color-3;
@@ -61,7 +61,7 @@ p {
   width: 200%;
   height: 100%;
   animation: spin 90s linear infinite;
-  background: url(images/phase-2.svg);
+  background: url(./assets/img/phase-2.svg);
   /*orginal image at https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Earthmap1000x500compac.jpg/640px-Earthmap1000x500compac.jpg */
   background-size: cover;
 }
@@ -82,7 +82,7 @@ p {
   transition-duration: 1s;
   box-shadow: 0 0 10px 10px rgba($color-2, 0);
   > div {
-    background: url(images/cadran-terre.svg);
+    background: url(./assets/img/cadran-terre.svg);
   }
 }
 @keyframes halo {
