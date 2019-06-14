@@ -15,11 +15,24 @@
         <div class="min-eye" id="eye"></div>
       </div> -->
       <div class="elmus-side-forest" id="elmusSideForest"></div>
-      <button class="btn-centrale">Activer la centrale</button>
+      <button class="btn-centrale" id="btnActivated">Activer la centrale</button>
   </main>
 
 </body>
 <script src="assets/js/jquery-3.4.1.min.js"></script>
 <script src="assets/js/script.js"></script>
 <script src="assets/js/scriptforest.js"></script>
+<script>
+    $( "#btnActivated" ).on( "click", function() {
+        console.log('CLICK CLICK CLICK');
+        $(".loader-out").css('display', 'block').animate({
+            opacity: 1,
+        }, 1000);
+
+        setTimeout(
+            function(){ window.location =  './earth-2.html' }, 3000
+        );
+
+    });
+</script>
 </html>
