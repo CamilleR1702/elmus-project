@@ -105,23 +105,21 @@ body{
   }
 }
 
-.btn-cockpit{
+
+button.btn-cockpit {
   display: none;
-  position: relative;
-  button{
-    font-family: $body-font-family;
-    text-transform: uppercase;
-    color: white;
-    font-size: 1rem;
-    background: transparent;
-    z-index: 9999;
-    position: absolute;
-    right: 300px;
-    bottom: 300px;
-    border: none;
-    cursor: pointer;
-    &:hover{
-      
-    }
+  font-family: Barlow Condensed,sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.5rem;
+  background: transparent;
+  z-index: 9999;
+  position: absolute;
+  right: 300px;
+  bottom: 300px;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    color: #c43b47;
   }
 }
