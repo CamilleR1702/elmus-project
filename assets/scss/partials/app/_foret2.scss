@@ -8,3 +8,51 @@
     bottom: 0;
   }
 }
+
+#tuyau-gauche {
+  background-image: url('assets/img/foret/tuyau-gauche.png');
+  background-repeat: no-repeat;
+  height: 105px;
+  width: 808px;
+  background-size: cover;
+  position: absolute;
+  bottom: 400px;
+  left: 315px;
+  animation: tuyau-gauche 3s steps(9) reverse forwards;
+}
+#tuyau-gauche.active {
+  // animation: eyes .5s steps(9) infinite alternate;
+}
+
+@keyframes tuyau-gauche {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -7272px;
+  }
+}
+
+#tuyau-droit {
+  background-image: url('assets/img/foret/tuyau-droit.png');
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 592px;
+  background-size: cover;
+  position: absolute;
+  bottom: 75px;
+  left: 1300px;
+  animation: tuyau-droit 3s steps(10) forwards;
+}
+#tuyau-gauche.active {
+  // animation: eyes .5s steps(9) infinite alternate;
+}
+
+@keyframes tuyau-droit {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -3750px;
+  }
+}
