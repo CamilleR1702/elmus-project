@@ -1,0 +1,56 @@
+.loader {
+  position : fixed;
+  z-index: 9999;
+  background-color: $color-1;
+  top : 0px;
+  left : 0px;
+  height : 100%;
+  width : 100%;
+  cursor : wait;
+}
+.loader {
+  .cercles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1000px;
+    width: 1000px;
+  }
+  .chargement {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $font-family-1;
+    @include font-size(46);
+    z-index: 10;
+    text-align: center;
+  }
+  .cercle {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-duration: 1s;
+  }
+  @keyframes cercle {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  #cercle-1 {
+    animation: cercle 16s linear reverse infinite;
+    width: 140px;
+    height: 140px;
+  }
+  #cercle-2 {
+    animation: cercle 10s linear infinite;
+    width: 200px;
+    height: 200px;
+  }
+}
