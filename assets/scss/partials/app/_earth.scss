@@ -1,5 +1,6 @@
 .block-body-earth {
   margin: 0;
+<<<<<<< HEAD
   overflow: hidden;
 <<<<<<< HEAD
   background: url(./assets/img/fond-galactique.svg);
@@ -7,6 +8,10 @@
   background: url(images/cockpit/fond-galactique.svg);
 >>>>>>> 29cc0ce2b28a86dc999d0997df472d74567cbc8b
   background-size: cover;
+=======
+
+
+>>>>>>> earth-screen
   font-family: $body-font-family;
   color: $color-3;
 }
@@ -33,6 +38,9 @@ p {
 .block-earth {
   height: 100vh;
   width: 100vw;
+  background: url(images/cockpit/fond-galactique.svg);
+  background-size: cover;
+  overflow: hidden;
 }
 // Position de la Terre sur l'écran
 .terre {
@@ -47,7 +55,7 @@ p {
   margin: auto;
   overflow: hidden;
   border-radius: 50%;
-  z-index: -1;
+  z-index: 0;
 }
 
 .terre:after {
@@ -120,12 +128,14 @@ p {
   bottom: 0;
   width: 100%;
   height: auto;
+  z-index: 1;
 }
 .cadran {
   position: absolute;
   bottom: 60px;
   transform: translate(-50%, 0);
   width: 400px;
+  z-index: 1;
 }
 #cadran-milieu {
   left: 50%;
