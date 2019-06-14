@@ -7,7 +7,8 @@ $(function() {
       event = eventName + eventNumber;
       if ($(event).not($('.show'))) {
         $( event ).addClass('show');
-        $( ".go" ).addClass('start').attr('data-start', eventNumber);
+        $( "#cadran-milieu" ).addClass('start');
+        $( ".go" ).attr('data-start', eventNumber);
       }
 
       if ($( ":not("+event+")" ).hasClass('show')) {

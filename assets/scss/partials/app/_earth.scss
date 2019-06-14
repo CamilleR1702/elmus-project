@@ -75,8 +75,9 @@ p {
   height: 40%;
   top: 0;
   z-index: 1;
-  opacity: .6;
-  animation: halo 2s linear alternate infinite;
+  opacity: .7;
+  transition-duration: 1s;
+  box-shadow: 0 0 10px 10px rgba($color-2, 0);
   > div {
     background: url(images/cadran-terre.svg);
   }
@@ -116,6 +117,8 @@ p {
   color: white;
   font-family: $font-family-2;
   @include font-size(90);
+  opacity: 0;
+  transition-duration: 1s;
 }
 .cercle {
   position: absolute;
@@ -123,6 +126,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition-duration: 1s;
 }
 @keyframes cercle {
   0% {
@@ -141,6 +145,15 @@ p {
   animation: cercle 10s linear infinite;
   width: 250px;
   height: 250px;
+}
+.start {
+  .go {
+    opacity: 1;
+  }
+  .terre-cadran {
+    animation: halo 2s linear alternate infinite;
+    opacity: .5;
+  }
 }
 //Cadran Gauche et Droite
 #cadran-gauche {
