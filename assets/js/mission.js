@@ -6,17 +6,33 @@ $(function() {
       eventName = ".mission-";
       event = eventName + eventNumber;
       if ($(event).not($('.show'))) {
-        $( event ).addClass('show');
-        $( "#cadran-milieu" ).addClass('start');
+        $( "#cadran-gauche "+event+" " ).addClass('show');
         $( ".go" ).attr('data-start', eventNumber);
       }
-
       if ($( ":not("+event+")" ).hasClass('show')) {
-        $( ":not("+event+")" ).removeClass('show');
+        $( "#cadran-gauche :not("+event+")" ).removeClass('show');
+        $( "#cadran-milieu" ).removeClass('start');
+      }
+      if ($("#cadran-droite "+event+"").hasClass('show')){
+        $( "#cadran-milieu" ).addClass('start');
       }
     });
 });
 
-$( window ).on( "load", function() {
-	$(".loader").delay( 1500 ).fadeOut("10000");
+$(function() {
+  $( ".go" )
+    .on('click', function() {
+      if (($('.start .go').attr('data-start') === '1'))  {
+          // TODO: enter your code...
+          window.location = "earth-1";
+      } else if (($('.start .go').attr('data-start') === '2'))  {
+          // TODO: enter your code...
+          window.location = "earth-2";
+      } else if (($('.start .go').attr('data-start') === '3')) {
+          // TODO: enter your code...
+          console.log('Nop');
+      } else {
+          // do nothing
+      }
+    });
 });
