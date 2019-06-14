@@ -1,0 +1,38 @@
+.figure-smoke{
+  width: calc(4519px / 20);
+  height: 65px;
+  background: url("./assets/img/smoke.png");
+  position: absolute;
+  left: 13%;
+  bottom: 0;
+  opacity: 0;
+  &.animated{
+    -webkit-animation: animateBg 1.4s steps(19) 1s forwards, animateBottom 2s linear 1.3s forwards;
+    -o-animation: animateBg 1.4s steps(19) 1s forwards, animateBottom 2s linear 1.3s forwards;
+    animation: animateBg 1.4s steps(19) 1s forwards, animateBottom 2s linear 1.3s forwards;
+  }
+}
+
+@keyframes animateBg {
+  0%{
+    opacity: 0;
+    background-position: 0;
+  }
+  100%{
+    opacity: 1;
+    background-position: -4293px;
+  }
+}
+
+
+@keyframes animateBottom {
+  0%{
+    bottom: 0;
+  }
+  30%{
+    bottom: 0;
+  }
+  100%{
+    bottom: -10rem;
+  }
+}

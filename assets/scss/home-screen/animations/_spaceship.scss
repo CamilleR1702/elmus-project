@@ -1,0 +1,11 @@
+.spaceship-figure{
+  &.animated{
+    animation: float 3s ease-out 1s infinite;
+  }
+}
+
+@keyframes float {
+  50% {
+    transform: translate(0, 20px);
+  }
+}

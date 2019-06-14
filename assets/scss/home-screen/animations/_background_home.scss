@@ -1,0 +1,23 @@
+.gradient-purple{
+  background: url("./assets/img/background_home.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  &.animated{
+    -webkit-animation: animate 8s ease-in forwards;
+    -o-animation: animate 8s ease-in forwards;
+    animation: animate 8s ease-in forwards;
+  }
+}
+
+@keyframes animate {
+  0%{
+    background-position: bottom;
+  }
+  20%{
+    background-position: bottom;
+  }
+  100%{
+    background-position: top;
+  }
+}
