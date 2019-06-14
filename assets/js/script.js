@@ -66,11 +66,15 @@ setInterval(function(){
 // BACTERIUM
 setInterval(function(){
   $('#bubble').removeClass('active');
+  $('#seeds').removeClass('active');
   $('#bacterium').addClass('active');
 }, 35000);
 
 setInterval(function(){
+  $('#bubble').removeClass('active');
+  $('#seeds').removeClass('active');
   $('#bacterium').addClass('infinite');
+  $('.btn-cockpit').css('display','block');
 }, 36000);
 
 

@@ -106,7 +106,7 @@ body{
 }
 
 .btn-cockpit{
-  animation-delay: 36s;
+  display: none;
   position: relative;
   button{
     font-family: $body-font-family;
@@ -121,7 +121,7 @@ body{
     border: none;
     cursor: pointer;
     &:hover{
-
+      
     }
   }
 }
