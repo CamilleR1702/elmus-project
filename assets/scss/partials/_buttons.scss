@@ -1,0 +1,40 @@
+.btn-cta{
+  position: absolute;
+  z-index: 1000;
+  width: 20%;
+  top: 45%;
+  left: 62%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &.fadeOut{
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    opacity: 0;
+  }
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  border-width: 0;
+  color: white;
+  font-family: $body-font-family;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.5rem;
+  &:hover{
+    color: $hoverbtn;
+  }
+}
+
+.next-btn{
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}

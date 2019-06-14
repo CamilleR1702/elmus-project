@@ -6,9 +6,18 @@
 @import "partials/app/reset";
 @import "partials/app/sizes";
 
-
 /* PROJECT */
-@import "partials/backgrounds";
+@import "partials/titles";
+@import "partials/buttons";
+
+/* HOME SCREEN */
+@import "home-screen/backgrounds";
+@import "home-screen/spaceship";
+@import "home-screen/planets";
+@import "home-screen/clouds";
+@import "home-screen/text";
 
 /* ANIMATIONS */
-@import "animations/smoke";
+@import "home-screen/animations/smoke";
+@import "home-screen/animations/spaceship";
+@import "home-screen/animations/background_home";

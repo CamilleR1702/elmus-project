@@ -1,0 +1,22 @@
+.text-content{
+  width: 50%;
+  left: 40%;
+  top: 10%;
+  z-index: 1000;
+  padding: 2rem 3rem;
+  height: fit-content;
+  font-family: $body-font-family;
+  p{
+    font-size: 2rem;
+    line-height: 2.3rem;
+    text-align: center;
+    &.title-2{
+      font-weight: bold;
+    }
+  }
+  &.animated{
+    -webkit-animation: animateText 1.4s steps(19) 5s forwards;
+    -o-animation: animateText 1.4s steps(19) 5s forwards;
+    animation: animateText 1.4s steps(19) 5s forwards;
+  }
+}

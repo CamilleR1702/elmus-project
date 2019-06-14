@@ -1,0 +1,19 @@
+.main-title{
+  position: absolute;
+  color: #fff;
+  font-family: Furore,sans-serif;
+  font-size: 6rem;
+  top: 10%;
+  left: 43%;
+  width: 31%;
+  line-height: 5rem;
+  text-align: right;
+  opacity: 1;
+  &.fadeOut{
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+    opacity: 0;
+  }
+}

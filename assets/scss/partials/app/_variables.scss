@@ -14,13 +14,15 @@
     font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,900&display=swap');
+
 $html-font-size: 16 !default; // px
 $body-font-size: 14 !default; // px
 @media screen and (min-width: 1365px){
     $body-font-size: 16 !default; // px
 }
 
-$body-font-family: Arial, sans-serif;
+$body-font-family: 'Barlow Condensed', sans-serif;
 $font-title: 'Furore', sans-serif;
 // $fontRegular :'NeoSansStdRegular', sans-serif;
 // $fontBold: 'NeoSansStdBold', sans-serif;
@@ -29,9 +31,9 @@ $font-title: 'Furore', sans-serif;
 // Colors
 // ------------------------------------
 
-$default:      	       #151010, !default; // grisf
-$yellowLight:          #FFFF81, !default;
-$greenLight:           #55ffe7, !default;
+$default:      	        #151010, !default; // grisf
+$hoverbtn:              #C43B47, !default;
+$greenLight:            #55ffe7, !default;
 
 $border-radius: 2px;
 
