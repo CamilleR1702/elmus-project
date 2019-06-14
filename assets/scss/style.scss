@@ -26,8 +26,11 @@
 @import "partials/app/loader";
 @import "space-screen/space";
 
+/* OCEAN SCREEN */
+@import "partials/ocean";
 
 /* ANIMATIONS */
 @import "home-screen/animations/smoke";
 @import "home-screen/animations/spaceship";
 @import "home-screen/animations/background_home";
+@import "animations/elmus";
