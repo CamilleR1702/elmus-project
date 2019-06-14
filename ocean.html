@@ -17,10 +17,23 @@
       <div class="elmus-side" id="elmusSide">
         <div class="seeds" id=seeds></div>
       </div>
-      <button class="btn-cockpit">Retouner au cockpit</button>
+      <button class="btn-cockpit" id="btnCompleted">Retouner au cockpit</button>
   </main>
 
 </body>
 <script src="assets/js/jquery-3.4.1.min.js"></script>
 <script src="assets/js/script.js"></script>
+<script>
+    $( "#btnCompleted" ).on( "click", function() {
+        console.log('CLICK CLICK CLICK');
+        $(".loader").css('display', 'block').animate({
+            opacity: 1,
+        }, 1000);
+
+        setTimeout(
+            function(){ window.location =  './earth-2.html' }, 3000
+        );
+
+    });
+</script>
 </html>
