@@ -7,9 +7,9 @@
   top: 11%;
   z-index: 1000;
   &.animated{
-    -webkit-animation: animateCloud 1.8s linear 2s forwards;
-    -o-animation: animateCloud 1.8s linear 2s forwards;
-    animation: animateCloud 1.8s linear 2s forwards;
+    -webkit-animation: animateCloud 1.8s linear 2.5s forwards;
+    -o-animation: animateCloud 1.8s linear 2.5s forwards;
+    animation: animateCloud 1.8s linear 2.5s forwards;
   }
 }
 

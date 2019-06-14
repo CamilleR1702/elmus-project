@@ -4,17 +4,14 @@
   background-repeat: no-repeat;
   background-position: bottom;
   &.animated{
-    -webkit-animation: animate 8s ease-in forwards;
-    -o-animation: animate 8s ease-in forwards;
-    animation: animate 8s ease-in forwards;
+    -webkit-animation: animate 16s ease-in 1.8s forwards;
+    -o-animation: animate 16s ease-in 1.8s forwards;
+    animation: animate 16s ease-in 1.8s forwards;
   }
 }
 
 @keyframes animate {
   0%{
-    background-position: bottom;
-  }
-  20%{
     background-position: bottom;
   }
   100%{

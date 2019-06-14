@@ -31,10 +31,27 @@ button{
 }
 
 .next-btn{
-  display: block;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  bottom: -4rem;
+  left: 45%;
+  opacity: 0;
+  &.animated{
+    -webkit-animation: animatedBtnNext 19s ease-in forwards;
+    -o-animation: animatedBtnNext 19s ease-in forwards;
+    animation: animatedBtnNext 19s ease-in forwards;
+  }
+}
+
+@keyframes animatedBtnNext {
+  0%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }

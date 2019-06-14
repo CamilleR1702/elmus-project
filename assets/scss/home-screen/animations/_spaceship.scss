@@ -1,11 +1,23 @@
 .spaceship-figure{
   &.animated{
-    animation: float 3s ease-out 1s infinite;
+    animation: float 18s cubic-bezier(0.32,-0.03, 0.99, 0.24) .2s forwards;
   }
 }
 
 @keyframes float {
+  0{
+    transform: translate(1px ,0 );
+  }
+  30% {
+    transform: translate(3px ,0 );
+  }
   50% {
-    transform: translate(0, 20px);
+    transform: translate(2px , 0);
+  }
+  80% {
+      transform: translate(2px , -1000px ) rotate(45deg);
+  }
+  100% {
+      transform: translate(2px , -1500px ) rotate(45deg);
   }
 }
