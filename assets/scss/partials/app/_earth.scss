@@ -1,7 +1,11 @@
 .block-body-earth {
   margin: 0;
   overflow: hidden;
+<<<<<<< HEAD
   background: url(./assets/img/fond-galactique.svg);
+=======
+  background: url(images/cockpit/fond-galactique.svg);
+>>>>>>> 29cc0ce2b28a86dc999d0997df472d74567cbc8b
   background-size: cover;
   font-family: $body-font-family;
   color: $color-3;
@@ -61,9 +65,19 @@ p {
   width: 200%;
   height: 100%;
   animation: spin 90s linear infinite;
+<<<<<<< HEAD
   background: url(./assets/img/phase-2.svg);
+=======
+  background: url(images/phase-1.svg);
+>>>>>>> 29cc0ce2b28a86dc999d0997df472d74567cbc8b
   /*orginal image at https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Earthmap1000x500compac.jpg/640px-Earthmap1000x500compac.jpg */
   background-size: cover;
+  .block-earth-1 & {
+    background: url(images/cockpit/phase-1.svg);
+  }
+  .block-earth-2 & {
+    background: url(images/cockpit/phase-2.svg);
+  }
 }
 @keyframes spin {
   to {
@@ -82,7 +96,14 @@ p {
   transition-duration: 1s;
   box-shadow: 0 0 10px 10px rgba($color-2, 0);
   > div {
+<<<<<<< HEAD
     background: url(./assets/img/cadran-terre.svg);
+=======
+    .block-earth & {
+      background: url(images/cockpit/cadran-terre.svg);
+    }
+
+>>>>>>> 29cc0ce2b28a86dc999d0997df472d74567cbc8b
   }
 }
 @keyframes halo {
@@ -130,14 +151,6 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   transition-duration: 1s;
-}
-@keyframes cercle {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
 }
 #cercle-1 {
   animation: cercle 16s linear reverse infinite;
@@ -190,6 +203,20 @@ p {
     color: $color-2;
   }
 }
+.mission.done {
+  position: relative;
+  color: rgba($color-3, .4);
+  &:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    height: 5px;
+    width: 70%;
+    background-color: $color-3;
+  }
+}
 .mission.lock {
   position: relative;
   color: rgba($color-3, .4);
@@ -212,6 +239,7 @@ p {
     content: "Coming soon";
     font-family: $font-family-1;
     @include font-size(32);
+    line-height: 1.6rem;
     color: $color-3;
     position: absolute;
     left: 50%;

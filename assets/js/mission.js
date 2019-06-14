@@ -1,18 +1,18 @@
-$(function() {
-  var event = ".mission-1";
-  $( ".mission" )
-    .on('mouseenter click', function() {
-      eventNumber = $(this).data("mission");
-      eventName = ".mission-";
-      event = eventName + eventNumber;
-      if ($(event).not($('.show'))) {
-        $( event ).addClass('show');
-        $( "#cadran-milieu" ).addClass('start');
-        $( ".go" ).attr('data-start', eventNumber);
-      }
 
-      if ($( ":not("+event+")" ).hasClass('show')) {
-        $( ":not("+event+")" ).removeClass('show');
+$(function() {
+  $( ".go" )
+    .on('click', function() {
+      if (($('.start .go').attr('data-start') === '1'))  {
+          // TODO: enter your code...
+          window.location = "earth-1";
+      } else if (($('.start .go').attr('data-start') === '2'))  {
+          // TODO: enter your code...
+          window.location = "earth-2";
+      } else if (($('.start .go').attr('data-start') === '3')) {
+          // TODO: enter your code...
+          console.log('Nop');
+      } else {
+          // do nothing
       }
     });
 });
