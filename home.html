@@ -21,7 +21,7 @@
         <p class="text-white title-1 w-100" id="title1"></p>
         <p class="text-white title-2 w-100" id="title2"></p>
         <p class="text-white w-100" id="title3"></p>
-        <button class="next-btn">
+        <button class="next-btn" id="btnNext">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.83 96.83"><defs><style>.classs-1,.classs-2{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}.classs-2{stroke-linecap:round;}</style></defs><title>Fichier 2</title><g id="Calque_2" data-name="Calque 2"><g id="Fusée"><rect class="classs-1" x="15.18" y="15.18" width="66.47" height="66.47" transform="translate(48.41 -20.05) rotate(45)"/><polyline class="classs-2" points="53.41 37.16 64.66 48.41 53.41 59.66"/><line class="classs-2" x1="32.16" y1="48.41" x2="63.75" y2="48.41"/></g></g></svg>
         </button>
     </div>
@@ -41,11 +41,23 @@
 
     </div>
 </main>
+
+<div class="loader">
+    <div class="cercles">
+        <div class="chargement">
+            Chargement ...
+        </div>
+        <img id="cercle-1" class="cercle" src="assets/img/cercle-1.png" alt="">
+        <img id="cercle-2" class="cercle" src="assets/img/cercle-2.png" alt="">
+    </div>
+</div>
+
 <div class="figure-smoke"></div>
 
 
 <script src="./node_modules/jquery/dist/jquery.js"> </script>
 <script type="text/javascript" src="assets/js/homescreen-typewriter.js"></script>
+<script type="text/javascript" src="assets/js/homescreen-loaderclick.js"></script>
 
 </body>
 </html>

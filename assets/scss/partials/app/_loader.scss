@@ -7,8 +7,8 @@
   height : 100%;
   width : 100%;
   cursor : wait;
-}
-.loader {
+  display: none;
+  opacity: 0;
   .cercles {
     position: absolute;
     top: 50%;
