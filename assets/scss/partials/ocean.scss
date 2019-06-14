@@ -1,0 +1,127 @@
+body{
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  position: relative;
+}
+
+.block-main-ocean-coast{
+  background-image: url(assets/img/bg-cote-ocean.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.block-main-ocean{
+  background-image: url(assets/img/bg-ocean.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.first-ground.ocean{
+  background-image: url(assets/img/ocean-black.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ocean.active{
+  animation: ocean 20s linear forwards;
+}
+
+#oceanBlack.active {
+  animation: ocean 25s linear forwards;
+}
+
+@keyframes ocean {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -4880px;
+  }
+}
+
+// VOLCANO
+.bubble {
+  background: url('assets/img/bubble.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 375px;
+  height: 730px;
+  position: absolute;
+  bottom: 160px;
+  right: 700px;
+  display: none;
+}
+#bubble.active {
+  display: block;
+  animation: bubble 5s steps(8) infinite;
+  // animation-delay: 40s;
+}
+
+@keyframes bubble {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -3000px;
+  }
+}
+
+.bacterium {
+  background: url('assets/img/sprite-bacterium.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1495px;
+  height: 770px;
+  position: absolute;
+  display: none;
+}
+#bacterium.active {
+  display: block;
+  animation: bacterium 1s steps(2) alternate;
+}
+
+#bacterium.infinite {
+  animation: bacteriumInfinite 1s steps(2) infinite alternate;
+}
+
+@keyframes bacterium {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -2988px;
+  }
+}
+
+@keyframes bacteriumInfinite {
+  from {
+    background-position: -2988px;
+  }
+  to {
+    background-position: -5975px;
+  }
+}
+
+.btn-cockpit{
+  display: none;
+  position: relative;
+  button{
+    font-family: $body-font-family;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    background: transparent;
+    z-index: 9999;
+    position: absolute;
+    right: 300px;
+    bottom: 300px;
+    border: none;
+    cursor: pointer;
+    &:hover{
+      
+    }
+  }
+}
