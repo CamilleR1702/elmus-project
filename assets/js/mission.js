@@ -19,6 +19,7 @@ $(function() {
     });
 });
 
+/*
 $(function() {
   $( ".go" )
     .on('click', function() {
@@ -36,3 +37,4 @@ $(function() {
       }
     });
 });
+*/

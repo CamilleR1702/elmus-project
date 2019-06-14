@@ -25,7 +25,7 @@
 
       <div class="cadran" id="cadran-milieu">
         <img src="assets/img/cockpit/cadran-milieu.svg" alt="">
-        <div class="go" data-start="1">
+        <div id="btnGo" class="go" data-start="1">
           GO
         </div>
         <div class="terre terre-cadran">
@@ -72,5 +72,18 @@
     <script src="./assets/js/jquery-3.4.1.min.js"> </script>
     <script type="text/javascript" src="assets/js/mission.js"></script>
     <script type="text/javascript" src="assets/js/loader.js"></script>
+    <script>
+      $( "#btnGo" ).on( "click", function() {
+        console.log('CLICK CLICK CLICK');
+        $(".loader").css('display', 'block').animate({
+          opacity: 1,
+        }, 1000);
+
+        setTimeout(
+                function(){ window.location =  './forest.html' }, 3000
+        );
+
+      });
+    </script>
   </body>
 </html>
