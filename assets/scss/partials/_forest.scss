@@ -1,0 +1,144 @@
+.block-body-forest{
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  position: relative;
+}
+
+.block-main-forest{
+  background-image: url('assets/img/bg-forest.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.first-ground.forest{
+  background-image: url('assets/img/forest-black.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#forest.active{
+  animation: forest 23s linear forwards;
+}
+
+#forestBlack.active {
+  animation: forest 25s linear forwards;
+}
+
+@keyframes forest {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -2960px;
+  }
+}
+
+.cloud-forest{
+  background-image: url('assets/img/cloud.png');
+  background-repeat: no-repeat;
+  height: 390px;
+  width: 4880px;
+  position: absolute;
+  top: 0;
+  // left: 4880px;
+}
+
+#cloud.active{
+  animation: cloud 25s linear forwards;
+}
+
+@keyframes cloud{
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -4880px;
+  }
+}
+
+.elmus-side-forest#elmusSideForest{
+  background-image: url('assets/img/elmus-side-forest.png');
+  background-repeat: no-repeat;
+  height: 225px;
+  width: 140px;
+  background-size: cover;
+  position: absolute;
+  bottom: 120px;
+  left: 170px;
+  display: block;
+}
+
+#elmusSideForest.active {
+  animation: elmusSideForest .8s steps(8) infinite alternate, elmusDirection 10s linear 25s forwards;
+}
+
+@keyframes elmusSideForest {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -1120px;
+  }
+}
+
+@keyframes elmusDirection {
+  0% {
+    left: 170px;
+  }
+  100% {
+    left: 1450px;
+  }
+}
+
+.grue-forest{
+  background-image: url('assets/img/grue.png');
+  background-repeat: no-repeat;
+  height: 740px;
+  width: 637.697px;
+  background-size: cover;
+  position: absolute;
+  bottom: 90px;
+  left: 570px;
+}
+#grue.active{
+  animation: grue .8s steps(5) infinite alternate, nacelle 4s linear forwards;
+}
+
+@keyframes grue {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -3190px;
+    left: -800px;
+  }
+}
+
+@keyframes nacelle {
+  0% {
+    left: 570px;
+  }
+  100% {
+    left: -800px;
+  }
+}
+
+button.btn-centrale {
+  display: none;
+  font-family: Barlow Condensed,sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.5rem;
+  background: transparent;
+  z-index: 9999;
+  position: absolute;
+  right: 200px;
+  bottom: 600px;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    color: #c43b47;
+  }
+}

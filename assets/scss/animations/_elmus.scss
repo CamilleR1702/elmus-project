@@ -8,6 +8,10 @@
   position: absolute;
   bottom: 270px;
   left: 400px;
+  &.forest{
+    bottom: 100px;
+    left: 200px;
+  }
 }
 #elmus.active {
   animation: eyes .5s steps(5) infinite alternate;
