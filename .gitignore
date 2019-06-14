@@ -51,6 +51,7 @@ Thumbs.db
 # -------------------------
 # PHP IDEA
 # -------------------------
+.idea/
 .idea/cour-des-arts.iml
 .idea/misc.xml
 .idea/modules.xml
