@@ -51,34 +51,32 @@ setTimeout(function(){
 }, 27000);
 
 //BACKGROUND ANIMATION OCEAN
-setInterval(function(){
+setTimeout(function(){
   $('#ocean').addClass('active');
   $('#oceanBlack').addClass('active');
 }, 1);
 
 // VOLCANO
-setInterval(function(){
+setTimeout(function(){
   $('#bubble').addClass('active');
   $('#seeds').removeClass('active');
 }, 30000);
 
 
 // BACTERIUM
-setInterval(function(){
+setTimeout(function(){
   $('#bubble').removeClass('active');
   $('#seeds').removeClass('active');
   $('#bacterium').addClass('active');
 }, 35000);
 
-setInterval(function(){
-  $('#bubble').removeClass('active');
-  $('#seeds').removeClass('active');
+setTimeout(function(){
   $('#bacterium').addClass('infinite');
   $('.btn-cockpit').css('display','block');
 }, 36000);
 
 
 // SEED
-setInterval(function(){
+setTimeout(function(){
   $('#seeds').addClass('active');
 }, 28000);
