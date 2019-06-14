@@ -54,7 +54,8 @@ function watch() {
     // Which files to watch to trigger the reload
     gulp.watch('*.js', reload);
     gulp.watch('*.scss', reload);
+    gulp.watch('*.html', reload);
 }
-    
+
 // Don't forget to expose the task!
 exports.watch = watch;

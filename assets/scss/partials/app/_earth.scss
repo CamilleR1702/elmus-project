@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: url(images/fond-galactique.svg);
+  background-size: cover;
+  font-family: $body-font-family;
+  color: $color-3;
+}
+h1, h2 {
+  font-family: "Furore", sans-serif;
+  margin: 1.5rem 0;
+}
+h1 {
+  @include font-size(26);
+}
+h2 {
+  @include font-size(42);
+}
+p {
+  font-family: "Barlow Condensed", sans-serif;
+  @include font-size(26);
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+.descriptif {
+  font-family: "Furore", sans-serif;
+  @include font-size(32);
+}
+.block-earth {
+  height: 100vh;
+  width: 100vw;
+}
+// Position de la Terre sur l'écran
+.terre {
+  background-color: white;
+  width: 50vw;
+  height: 50vw;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.terre:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: -20px -20px 50px 2px #000 inset;
+  border-radius: 50%;
+}
+
+.terre > div {
+  width: 200%;
+  height: 100%;
+  animation: spin 90s linear infinite;
+  background: url(images/phase-2.svg);
+  /*orginal image at https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Earthmap1000x500compac.jpg/640px-Earthmap1000x500compac.jpg */
+  background-size: cover;
+}
+@keyframes spin {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.terre-cockpit {
+  top: 40%;
+}
+//Terre dans le cadran du milieu
+.terre-cadran {
+  width: 160px;
+  height: 160px;
+  z-index: 1;
+  opacity: .7;
+  transition-duration: 1s;
+  box-shadow: 0 0 10px 10px rgba($color-2, 0);
+  > div {
+    background: url(images/cadran-terre.svg);
+  }
+}
+@keyframes halo {
+  0% {
+    box-shadow: 0 0 10px 10px $color-2;
+  }
+  100% {
+    box-shadow: 0 0 50px 30px $color-2;
+  }
+}
+// Position des cadrans sur l'écran
+#cadran-base {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+.cadran {
+  position: absolute;
+  bottom: 60px;
+  transform: translate(-50%, 0);
+  width: 400px;
+}
+#cadran-milieu {
+  left: 50%;
+  bottom: 80px;
+}
+.go {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: $font-family-2;
+  @include font-size(90);
+  opacity: 0;
+  transition-duration: 1s;
+}
+.cercle {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 1s;
+}
+@keyframes cercle {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+#cercle-1 {
+  animation: cercle 16s linear reverse infinite;
+  width: 200px;
+  height: 200px;
+}
+#cercle-2 {
+  animation: cercle 10s linear infinite;
+  width: 250px;
+  height: 250px;
+}
+.start {
+  .go {
+    opacity: 1;
+  }
+  .terre-cadran {
+    animation: halo 2s linear alternate infinite;
+    opacity: .5;
+  }
+}
+//Cadran Gauche et Droite
+#cadran-gauche {
+  //Positionnement du cadran gauche
+  left: calc(50% - 27%);
+  //Display: none sur tous les éléments qui n'ont pas la class .show
+  .show {
+    transition-duration: 1s;
+  }
+  div:not(.show) {
+    opacity: 0;
+  }
+}
+#cadran-droite {
+  //Positionnement du cadran gauche
+  left: calc(50% + 27%);
+}
+//Element avec le contenu centrer selon le cadran
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+}
+.mission {
+  cursor: pointer;
+  transition-duration: 1s;
+  &:hover {
+    color: $color-2;
+  }
+}
+.mission.lock {
+  position: relative;
+  color: rgba($color-3, .4);
+  &:before {
+    content: "\f023";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    @include font-size(32);
+    color: $color-3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.mission.soon {
+  position: relative;
+  color: rgba($color-3, .4);
+  &:before {
+    content: "Coming soon";
+    font-family: $font-family-1;
+    @include font-size(32);
+    color: $color-3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

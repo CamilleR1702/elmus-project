@@ -5,6 +5,7 @@
 @import "partials/app/mixins";
 @import "partials/app/reset";
 @import "partials/app/sizes";
+@import "partials/app/fonts";
 
 /* PROJECT */
 @import "partials/titles";
@@ -16,6 +17,14 @@
 @import "home-screen/planets";
 @import "home-screen/clouds";
 @import "home-screen/text";
+
+/* SPACE SCREEN */
+@import "../fontawesome/scss/fontawesome.scss";
+@import "../fontawesome/scss/regular.scss";
+@import "../fontawesome/scss/brands.scss";
+@import "../fontawesome/scss/solid.scss";
+@import "partials/app/earth";
+@import "partials/app/loader";
 
 /* ANIMATIONS */
 @import "home-screen/animations/smoke";
