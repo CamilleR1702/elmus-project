@@ -1,0 +1,262 @@
+body{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+/****************
+HUBLOT
+********/
+body .hublot{
+  background: url("hublot.png");
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  background-size: cover;
+}
+/*********************
+TRANSITION
+********************/
+.bg{
+  z-index: 6;
+  position: absolute;
+  fill: #333333;
+}
+.bg-up{
+  animation: bg-up 2s forwards;
+}
+@keyframes bg-up{
+  0%{top:0%;}
+  100%{top:-51%;}
+}
+
+.bg-down{
+  animation: bg-down 2s forwards;
+}
+@keyframes bg-down{
+  0%{bottom:0%;}
+  100%{bottom:-51%;}
+}
+
+/*******************
+MESSAGES
+*******************/
+.messages svg{
+  z-index: 5;
+  position: absolute;
+}
+.messages .detected{
+  width: 50%;
+  left: 350px;
+  top: 165px;
+  opacity: 0;
+  animation: detected 20s 2s forwards;
+}
+@keyframes detected{
+  0%{opacity: 0;}
+  97%{opacity: 0;}
+  98%{opacity: .7}
+  99%{opacity: 0;}
+  100%{opacity: .7}
+}
+.messages .error{
+  width: 40%;
+  left: 30%;
+  top: 50%;
+  opacity: 0;
+  animation: error 20s 2s forwards;
+}
+@keyframes error{
+  0%{opacity: 0;}
+  21%{opacity: 0;}
+  22%{opacity:.7;}
+  23%{opacity: 0;}
+  24%{opacity:.7;}
+  25%{opacity: 0;}
+  26%{opacity:.7;}
+  27%{opacity: 0;}
+  56%{opacity: 0;}
+  57%{opacity:.7;}
+  58%{opacity: 0;}
+  59%{opacity:.7;}
+  60%{opacity: 0;}
+  61%{opacity:.7;}
+  62%{opacity: 0;}
+}
+/********************
+ASTEROID
+**********************/
+.asteroid{
+  z-index: 4;
+  width: 5%;
+  position: absolute;
+}
+/******************
+TARGET
+*****************/
+.target-svg{
+  width: 7%;
+  z-index: 5;
+  position: absolute;
+  left: 67.9%;
+  top: 51.8%;
+  opacity: 00;
+  animation: target 20s 2s forwards;
+}
+.target-svg .cls-1,.cls-2{
+  fill:none;
+  stroke: #1FEFEB;
+  stroke-miterlimit:10;
+  animation: colortarget 20s 2s forwards;
+}
+@keyframes colortarget {
+  0%{stroke:#1FEFEB;}
+  14%{stroke:#1FEFEB;}
+  15%{stroke:#ef1f30;}
+  25%{stroke:#ef1f30;}
+  26%{stroke: #1FEFEB}
+  44%{stroke:#1FEFEB;}
+  45%{stroke:#ef1f30;}
+  46%{stroke:#1FEFEB;}
+  47%{stroke:#ef1f30;}
+  48%{stroke:#1FEFEB;}
+  55%{stroke:#1FEFEB;}
+  56%{stroke:#ef1f30;}
+  65%{stroke:#ef1f30;}
+  66%{stroke:#1FEFEB;}
+  95%{stroke:#1FEFEB;}
+  96%{stroke:#7be237;}
+  100%{stroke:#7be237;}
+}
+
+.target-svg .cls-1{
+  stroke-width:7px;
+}
+.target-svg .cls-2{
+  stroke-width:2px;
+}
+
+@keyframes target {
+  5%{opacity: 0.7;top: 50%;left: 50%; }
+  10%{left: .9%;top: 36.8%;}
+  14%{width: 7%;}
+  15%{left: 701px;top: 83px;width: 18.5%;}
+  24%{left: 455px;top: 132px;width: 18.5%;}
+  26%{left: 420px;top: 132px;width: 18.5%}
+  29%{width: 7%;}
+  35%{left: 32.9%;top: 36.8%;width: 12%;}
+  40%{left: 10.9%;top: 80.8%;width: 3%;}
+  45%{left: 80.9%;top: 55.8%;width: 12%;}
+  50%{left: 67.9%;top: 79.8%;width: 14%;}
+  55%{opacity: .7;left: 68.9%;top: 50.8%;width:7%;}
+  56%{left: 1056px;top: 33.1px;width: 11.7%;}
+  62%{left: 995px;top: 83.1px;width: 11.7%;}
+  65%{left: 810px;top: 107.1px;width: 11.7%;}
+  75%{left: 67.9%;top: 51.8%;width: 7%;}
+  80%{left: 42.9%;top: 63.8%;width: 9%;}
+  85%{left: 66.9%;top: 52.8%;}
+  95%{top: -53.2px;}
+  100%{opacity: .7;left: 68%;top: 51.5%;}
+}
+/****************
+ETOILE FILANTE
+*****************/
+@keyframes particleAnimation
+{
+  from {
+    right: -100px;
+  }
+  to {
+    right: calc( 100% + 100px );
+  }
+}
+
+.p{
+  position:fixed;
+  right:0px;
+  top:50px;
+  width:0px;
+  height:1px;
+  background-color:white;
+  animation-name:particleAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 3;
+}
+.p::before{
+  position:absolute;
+  display:block;
+  content:"";
+  width:100px;
+  right:0px;
+  top:0px;
+  height:3px;
+  background: linear-gradient(to left, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%);
+}
+.p-1{
+  animation-duration:3s;
+}
+.p-2{
+  animation-duration:2s;
+  top:60%;
+}
+.p-3{
+  animation-duration:3.5s;
+  top:90%;
+}
+/********************
+LINK
+************************/
+.orbite-link{
+  z-index: 11;
+  position: fixed;
+  opacity: 0;
+  animation: link 20s 3s forwards;
+  left: 23%;
+  top: 51%;
+  width: 42%;
+  font-size: 5.4rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+}
+@keyframes link{
+  98%{opacity: 0;}
+  99%{opacity: 1;}
+  100%{opacity: 1;}
+}
+
+.orbite-link:hover{
+  color: #c43b47;
+}
+/****************
+COSMOS
+*****************/
+body .voyage{
+  background : url("space_2.png");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 0% 55%;
+  z-index: 2;
+  animation: cosmos 20s linear 2s forwards;
+  zoom: .8;
+}
+@keyframes cosmos{
+  0%{background-position: 0% 55%;}
+  15%{background-position: 20.3% 34%}
+  24%{background-position: 24.3% 32%}
+  26%{background-position: 26% 30%;}
+  38%{background-position: 38% 52%;}
+  42%{background-position: 42% 55%;}
+  44%{background-position: 44% 50%;}
+  53%{background-position: 52% 35%;}
+  56%{background-position: 56% 32%;}
+  62%{background-position: 57% 30%;}
+  65%{background-position: 60% 29%;}
+  70%{background-position: 62% 30%;}
+  90%{background-position: 102% 70%;}
+  100%{background-position: 102% 50%;}
+}

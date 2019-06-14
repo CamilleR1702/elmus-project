@@ -7,7 +7,7 @@ $( "#btnNext" ).on( "click", function() {
 
 
    setTimeout(
-        function(){ window.location =  './earth.html' }, 3000
+        function(){ window.location =  './cosmos.html' }, 3000
     );
 
 });
