@@ -59,8 +59,21 @@
 #elmusSwim.active {
   animation: elmusStartSwim 1s steps(7) forwards;
 }
+
 #elmusSwim.active-swim{
-  animation: elmusSwim .8s steps(4) infinite;
+  animation: elmusSwim .8s steps(5) infinite alternate;
+}
+
+#elmusSwim.stop-swim {
+  animation: elmusStartSwim 1s steps(7) forwards reverse;
+}
+
+#elmusSwim.active-swim-volcano {
+  animation: elmusSwimVolcano 1s steps(4) forwards, elmusSwimVolcanoPosition 1s steps(4) forwards;
+}
+
+#elmusSwim.stop-swim-volcano {
+  animation: elmusSwimVolcanoReverse 1s steps(4) forwards;
 }
 
 @keyframes elmusStartSwim {
@@ -77,6 +90,127 @@
     background-position: -1170px;
   }
   100% {
-    background-position: -1835px;
+    background-position: -2000px;
+  }
+}
+
+@keyframes elmusSwimVolcano {
+  0% {
+    bottom: 270px;
+    left: 400px;
+  }
+  20% {
+    bottom: 310px;
+    left: 500px;
+  }
+  40% {
+    bottom: 346px;
+    left: 550px;
+  }
+  60% {
+    bottom: 380px;
+    left: 600px;
+  }
+  80% {
+    bottom: 420px;
+    left: 650px;
+  }
+  100% {
+    bottom: 450px;
+    left: 750px;
+  }
+}
+
+@keyframes elmusSwimVolcanoPosition {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -665px;
+  }
+}
+
+@keyframes elmusSwimVolcanoReverse {
+  0% {
+    bottom: 450px;
+    left: 750px;
+    background-position: -665px;
+  }
+  100% {
+    bottom: 450px;
+    left: 750px;
+    background-position: 0;
+  }
+}
+
+
+.elmus-side{
+  background-image: url('assets/img/elmus-side.png');
+  background-repeat: no-repeat;
+  height: 225px;
+  width: 140px;
+  background-size: cover;
+  position: absolute;
+  bottom: 450px;
+  left: 780px;
+  display: none;
+}
+#elmusSide.active {
+  display: block;
+  animation: elmusSide .8s steps(5) infinite alternate;
+}
+#elmusSwim.none {
+  display: none;
+}
+
+@keyframes elmusSide {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -705px;
+  }
+}
+
+// SEEDS / GRAINES
+.seeds{
+  background: url('assets/img/graines.svg') no-repeat;
+  background-size: cover;
+  width: 22px;
+  height: 27px;
+  position: absolute;
+  top: 150px;
+  right: 0;
+  display: none;
+}
+#seeds.active {
+  display: block;
+  animation: seed .5s forwards;
+}
+
+@keyframes seed {
+  0% {
+    top: 150px;
+    right: 0;
+  }
+  20% {
+    top: 160px;
+    right: -10px;
+  }
+  40% {
+    top: 170px;
+    right: -20px;
+  }
+  60% {
+    top: 180px;
+    right: -30px;
+  }
+  80% {
+    top: 190px;
+    right: -40px;
+  }
+  100% {
+    top: 200px;
+    right: -50px;
   }
 }
