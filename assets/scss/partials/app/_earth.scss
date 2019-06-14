@@ -1,23 +1,12 @@
 .block-body-earth {
   margin: 0;
-<<<<<<< HEAD
-  overflow: hidden;
-<<<<<<< HEAD
-  background: url(./assets/img/fond-galactique.svg);
-=======
-  background: url(images/cockpit/fond-galactique.svg);
->>>>>>> 29cc0ce2b28a86dc999d0997df472d74567cbc8b
-  background-size: cover;
-=======
-
-
->>>>>>> earth-screen
   font-family: $body-font-family;
   color: $color-3;
 }
 h1, h2 {
   font-family: "Furore", sans-serif;
   margin: 1.5rem 0;
+  line-height: normal;
 }
 h1 {
   @include font-size(26);
@@ -29,7 +18,8 @@ p {
   font-family: "Barlow Condensed", sans-serif;
   @include font-size(26);
   margin: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem !important;
+  line-height: 2rem;
 }
 .descriptif {
   font-family: "Furore", sans-serif;
@@ -38,7 +28,7 @@ p {
 .block-earth {
   height: 100vh;
   width: 100vw;
-  background: url(images/cockpit/fond-galactique.svg);
+  background: url(./assets/img/cockpit/fond-galactique.svg);
   background-size: cover;
   overflow: hidden;
 }
@@ -73,18 +63,15 @@ p {
   width: 200%;
   height: 100%;
   animation: spin 90s linear infinite;
-<<<<<<< HEAD
-  background: url(./assets/img/phase-2.svg);
-=======
-  background: url(images/phase-1.svg);
->>>>>>> 29cc0ce2b28a86dc999d0997df472d74567cbc8b
+  background: url(./assets/img/cockpit/phase-1.svg);
+
   /*orginal image at https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Earthmap1000x500compac.jpg/640px-Earthmap1000x500compac.jpg */
   background-size: cover;
   .block-earth-1 & {
-    background: url(images/cockpit/phase-1.svg);
+    background: url(./assets/img/cockpit/phase-1.svg);
   }
   .block-earth-2 & {
-    background: url(images/cockpit/phase-2.svg);
+    background: url(./assets/img/cockpit/phase-2.svg);
   }
 }
 @keyframes spin {
@@ -104,14 +91,9 @@ p {
   transition-duration: 1s;
   box-shadow: 0 0 10px 10px rgba($color-2, 0);
   > div {
-<<<<<<< HEAD
-    background: url(./assets/img/cadran-terre.svg);
-=======
     .block-earth & {
-      background: url(images/cockpit/cadran-terre.svg);
+      background: url(./assets/img/cockpit/cadran-terre.svg);
     }
-
->>>>>>> 29cc0ce2b28a86dc999d0997df472d74567cbc8b
   }
 }
 @keyframes halo {
