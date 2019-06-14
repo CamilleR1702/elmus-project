@@ -7,8 +7,15 @@
   height : 100%;
   width : 100%;
   cursor : wait;
-  display: none;
-  opacity: 0;
+
+  &.loader-in{
+    display: block;
+    opacity: 1;
+  }
+  &.loader-out{
+    display: none;
+    opacity: 0;
+  }
   .cercles {
     position: absolute;
     top: 50%;

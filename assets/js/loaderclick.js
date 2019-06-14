@@ -1,3 +1,5 @@
+
+
 $( "#btnNext" ).on( "click", function() {
     console.log('CLICK CLICK CLICK');
     $(".loader").css('display', 'block').animate({
