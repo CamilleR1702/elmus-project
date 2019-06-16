@@ -2,11 +2,11 @@
 setTimeout(function(){
   $('#forest').addClass('active');
   $('#forestBlack').addClass('active');
-}, 5000);
+}, 4000);
 
 setTimeout(function(){
   $('#elmusSideForest').addClass('active');
-}, 5000);
+}, 4000);
 
 setTimeout(function(){
   // $('#elmusSideForest').removeClass('active');
@@ -15,8 +15,8 @@ setTimeout(function(){
 
 setTimeout(function(){
   $('#grue').addClass('active');
-}, 5000);
+}, 4000);
 
 setTimeout(function(){
   $('#cloud').addClass('active');
-}, 5000);
+}, 4000);

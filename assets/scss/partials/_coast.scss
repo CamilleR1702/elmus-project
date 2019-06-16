@@ -12,6 +12,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
     position: absolute;
     left: 18%;
+    top: 0;
     height: 1080px;
     animation: teleport 3s 1s forwards;
 }
@@ -35,7 +36,7 @@ ELMUS APPARITION
 }
 
 /**********
-elmus side 
+elmus side
 ***********/
 .elmus-apparition .elmus-side-coast{
     background-image: url('assets/img/elmus-sprite-swim.png');
@@ -47,7 +48,7 @@ elmus side
     position: absolute;
     bottom: 270px;
     left: 360px;
-    animation: elmus-jump 3s steps(12) 3s forwards;
+    animation: elmus-jump 3s steps(11) 3s forwards;
 }
 @keyframes elmus-jump{
 0%{background-position: 0;}
